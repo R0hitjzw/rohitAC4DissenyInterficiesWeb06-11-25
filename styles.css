@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.section1 {
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    height: 96vh;
+    width: 80vw;
+    border-style: solid;
+    border-color: #d7d7d7;
+    border-width: 12px;
+    border-top-width: 25px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.greyTemplate {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: center;
+    height: 85%;
+    width: 65%;
+    padding: 10px;
+    gap: 5px;
+    margin-bottom: 5vh;
+}
+
+.grey {
+    /* border-style: solid; */
+    background-color: #d7d7d7;
+    border-radius: 100%;
+}
+
+.square {
+    margin: -5px;
+    border-radius: 0%;
+}
+
+.right {
+    margin-right: 5px;
+}
+
+.bottom {
+    margin-bottom: 5px;
+}
+
+.top {
+    margin-top: 5px;
+}
+
+.left {
+    margin-left: 5px;
+}
+
+.grey.square {
+    border-radius: 5px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.section2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.title {
+    margin-left: 12vw;
+    height: 9%;
+}
+
+.gridLayout {
+    display: grid;
+    gap: 2px;
+    justify-self: center;
+    border-style: solid;
+    height: 90vh;
+    width: 60vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    margin-bottom: 10vh;
+}
+
+.gridElements {
+    border-style: solid;
+    border-color: #50b440;
+    background-size: cover;
+}
+
+.blackout {
+    border-style: none;
+}
+
+.divsInside {
+    display: grid;
+}
+
+/* 
+He tret les imatges d'aquì
+https: //www.directoryofillustration.com/artist.aspx?AID=10228 
+*/
+
+#img1 {
+    background-image: url(./tankScorpion.jpg);
+    background-size: cover;
+}
+
+#img2 {
+    background-image: url(./goldenCar.jpg);
+    background-size: cover;
+}
+
+#img3 {
+    background-image: url(./jackedIronman.jpg);
+    background-size: cover;
+}
+
+#img4 {
+    background-image: url(./coldStone.jpg);
+    background-size: cover;
+}
+
+#img5 {
+    background-image: url(./skullHorns.jpg);
+    background-size: cover;
+}
+
+#img6 {
+    background-image: url(./wieldingSword.jpg);
+    background-size: cover;
+}
+
+.imageInside {
+    border-style: solid;
+}
+
+#img7 {
+    background-image: url(./cosmosSurfing.jpg);
+    background-size: cover;
+}
+
+#img8 {
+    background-image: url(./womanStaringCliff.jpg);
+    background-size: cover;
+}
+
+#img9 {
+    background-image: url(./youWereLaw.jpg);
+    background-size: cover;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* TEMPLATE CLONING */
+
+.section3 {
+    height: 173vh;
+    width: 100vw;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.templateCloning {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+
+.blueBanner {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #224664;
+    height: 5vh;
+    width: 100vw;
+}
+
+.logoSearchbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10vw;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 50vw;
+    background-color: white;
+    margin-top: 2vh;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 7vw;
+    color: #8e2960;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.searchbar {
+    height: 5vh;
+    width: 5vw;
+    background-color: red;
+}
+
+.search {
+    display: grid;
+    width: 45vw;
+}
+
+input {
+    width: 30vw;
+}
+
+button {
+    height: 100%;
+    width: 10%;
+}
+
+.navClass {
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    width: 95vw;
+    justify-content: flex-end;
+    column-gap: 30px;
+    list-style: none;
+    color: #8e2960;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.imageTemplate {
+    flex-direction: column;
+    justify-self: center;
+    height: 50vh;
+    width: 90vw;
+    position: relative;
+}
+
+.bringLight {
+    display: grid;
+    height: 25vh;
+    width: 30vw;
+    color: #8e2960;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    z-index: 1000;
+    top: 25%;
+    right: 5vw;
+    border-style: solid;
+    position: absolute;
+}
+
+.bringLight>h3 {
+    display: grid;
+    justify-content: center;
+    color: black;
+}
+
+.bringLight>h4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-style: solid;
+    height: 2vw;
+    width: 12vw;
+    justify-self: center;
+}
+
+.threeDivs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28vw, 29vw));
+    justify-self: center;
+    column-gap: 1vw;
+    justify-content: center;
+    height: 32vh;
+    width: 90vw;
+}
+
+.img {
+    border-style: solid;
+    height: 32vh;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.gifts {
+    /* border-style: solid; */
+    margin-top: 3vh;
+    height: 45vh;
+}
+
+.giftsTitle {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    font-size: x-large;
+}
+
+.giftsDisplayed {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 14vw));
+    /* border-style: solid; */
+    height: 25vh;
+    /* background-color: red; */
+    gap: 2px;
+}
+
+.giftImages {
+    border-style: solid;
+    border-color: white;
+
+}
+
+.giftImages:hover {
+    border-width: 3px;
+    border-color: black;
+}
+
+.giftImages:first-child {
+    background-image: url(./giftHempBag.jpg);
+    background-size: contain;
+}
+
+.giftImages:nth-child(2) {
+    background-image: url(./giftMugSillyAssQuote.avif);
+    background-size: contain;
+}
+
+.giftImages:nth-child(3) {
+    background-image: url(./giftHarryPotterTotebag.jpg);
+    background-size: contain;
+}
+
+.giftImages:nth-child(4) {
+    background-image: url(./giftPlantPot.jpg);
+    background-size: cover;
+}
+
+.giftImages:nth-child(5) {
+    background-image: url(./giftPocketKnife.webp);
+    background-size: contain;
+}
+
+.giftImages:nth-child(6) {
+    background-image: url(./giftBreadBasket.jpg);
+    background-size: contain;
+    width: 13.8vw;
+}
+
+.giftImages:last-child {
+    background-image: url(./giftCandle.jpg);
+    background-size: cover;
+    margin-left: -0.2vw;
+}
+
+.lastImage {
+    margin-top: 5vh;
+    height: 31vh;
+    width: 100%;
+    background-image: url(./sofaBackgroundImg.jpg);
+    margin-bottom: -30vh;
+    position: absolute;
+}
+
+.lifestyleHomedecor {
+    display: grid;
+    position: relative;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 21vh;
+    height: 10.5vh;
+    align-items: center;
+}
+
+.lifestyle {
+    display: grid;
+    justify-content: center;
+}
+
+.homeDecor {
+    display: grid;
+    justify-content: center;
+}
+
+.lifestyleHomedecor>div>h1:hover {
+    font-size: x-large;
+}
